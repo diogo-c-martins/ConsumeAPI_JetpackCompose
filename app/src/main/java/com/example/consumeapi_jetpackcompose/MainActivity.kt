@@ -10,6 +10,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import com.example.consumeapi_jetpackcompose.pokemonlist.PokemonListScreen
 import com.example.consumeapi_jetpackcompose.ui.theme.API_Theme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -26,7 +27,7 @@ class MainActivity : AppCompatActivity() {
                 ) {
                     //single screen 1
                     composable("pokemon_list_screen") {
-
+                        PokemonListScreen(navController = navController)
                     }
                     //single screen 2
                     composable(
